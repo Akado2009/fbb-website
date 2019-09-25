@@ -4,7 +4,7 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Template from './components/Template';
+import Template from './components/Template/Template';
 import Main from './pages/Main';
 
 
@@ -12,7 +12,6 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         margin: '0 auto',
-        height: '100%',
         background: 'transparent',
     },
 }));

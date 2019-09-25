@@ -2,10 +2,10 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import Header from './Header';
+import Header from '../Header/Header';
 import Spacing from './Spacing';
 import PaperWrapper from './PaperWrapper';
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 
 
 const useStyles = makeStyles(theme => ({
@@ -19,7 +19,7 @@ const Template = (props) => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} >
             <Header />
             <Spacing />
             <PaperWrapper>

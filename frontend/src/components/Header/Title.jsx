@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-import Logo from '../assets/img/fbb_logo.png';
+import Logo from '../../assets/img/fbb_logo.png';
 
 const useStyles = makeStyles(theme => ({
     root: {
