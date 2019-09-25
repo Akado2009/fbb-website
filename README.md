@@ -2,7 +2,7 @@
 
 New version of [Faculty of Bioengineering and Bioinfromatics website](http://fbb.msu.ru/).
 
-Built using React. Further - Redux, when backend will be ready.
+Built using React. Further - Redux, when backend is ready.
 
 Backend written in Go using [gorilla/mux](https://github.com/gorilla/mux).
 
