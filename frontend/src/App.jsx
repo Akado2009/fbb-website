@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Template from './components/Template/Template';
 import Main from './pages/Main';
+import Contacts from './pages/Contacts';
 
 
 const useStyles = makeStyles(theme => ({
@@ -27,7 +28,18 @@ const theme = createMuiTheme({
         },
     },
     typography: {
-        fontFamily: "Verdana",
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+          ].join(','),
     }
 });
 
@@ -42,6 +54,7 @@ const App = () => {
                     <CssBaseline />
                     <Template>
                         <Route exact path={"/"} component={Main} />
+                        <Route path={"/contacts"} component={Contacts} />
                     </Template>
                 </MuiThemeProvider>
             </Router>
