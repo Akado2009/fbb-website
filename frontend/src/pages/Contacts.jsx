@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Info from '../components/Contacts/Info';
 import Map from '../components/Contacts/Map';
+import Links from '../components/Contacts/Links';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -28,6 +29,7 @@ const Contacts = () => {
             <Info />
             <br />
             <Map />
+            <Links />
         </div>
     );
 };
