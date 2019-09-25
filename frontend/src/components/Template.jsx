@@ -3,10 +3,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Header from './Header';
+import Spacing from './Spacing';
+import PaperWrapper from './PaperWrapper';
+import Footer from './Footer';
+
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flex: 'grow',
+        flexGrow: 1,
     },
 }));
 
@@ -17,8 +21,11 @@ const Template = (props) => {
     return (
         <div className={classes.root}>
             <Header />
-            
-            {props.children}
+            <Spacing />
+            <PaperWrapper>
+                {props.children}
+            </PaperWrapper>
+            <Footer />
         </div>
     );
 };

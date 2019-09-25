@@ -10,8 +10,10 @@ import Main from './pages/Main';
 
 const useStyles = makeStyles(theme => ({
     root: {
+        flexGrow: 1,
         margin: '0 auto',
-        height: 2000,
+        height: '100%',
+        background: 'transparent',
     },
 }));
 

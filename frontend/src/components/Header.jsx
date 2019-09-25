@@ -10,10 +10,10 @@ import Menu from './Menu';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flex: "grow",
+        flexGrow: 1,
     },
     paper: {
-        height: 110,
+        height: 100,
         position: "fixed",
         top: 0,
         width: "100%",
@@ -21,7 +21,8 @@ const useStyles = makeStyles(theme => ({
         borderRadius: 3,
     },
     grid: {
-        margin: '0 300px',
+        padding: 7,
+        verticalAlign: 'center',
     }
 }));
 
@@ -36,18 +37,18 @@ const Header = () => {
                 className={classes.paper}
                 elevation={3}
             >
-                <Grid 
-                    container 
+                <Grid
+                    container
                     spacing={4}
                     alignItems={"center"}
                     justify={"center"}
                     alignContent={"center"}
                     className={classes.grid}
                 >
-                    <Grid item xs={6}>
+                    <Grid item xs={8}>
                         <Title />
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={4}>
                         <Menu />
                     </Grid>
                 </Grid>
